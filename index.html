@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script defer src="./script.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- </style> -->
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="inputs">
+        <div class="input">
+          <!-- <div class="input-label">day</div> -->
+          <label for="day">day</label>
+          <input
+            type="text"
+            name="day"
+            id="input-day"
+            placeholder="DD"
+            maxlength="2"
+          />
+          <p class="day-error"></p>
+        </div>
+        <div class="input">
+          <label for="month">month</label>
+          <!-- <div class="input-label">month</div> -->
+          <input
+            type="text"
+            name="month"
+            id="input-month"
+            placeholder="MM"
+            maxlength="2"
+          />
+          <p class="month-error"></p>
+        </div>
+        <div class="input">
+          <label for="year">year</label>
+          <!-- <div class="input-label">year</div> -->
+          <input
+            type="text"
+            name="year"
+            id="input-year"
+            placeholder="YYYY"
+            maxlength="4"
+          />
+          <p class="year-error"></p>
+        </div>
+      </div>
+      <div class="btn">
+        <img src="./assets/images/icon-arrow.svg" alt="button" />
+      </div>
+      <div class="display">
+        <p class="display-years"><span class="span-years">38</span>years</p>
+        <p class="display-months"><span class="span-months">3</span>months</p>
+        <p class="display-days"><span class="span-days">26</span>days</p>
+      </div>
+    </main>
+  </body>
+</html>

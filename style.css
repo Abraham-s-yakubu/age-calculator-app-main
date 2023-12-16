@@ -1,0 +1,153 @@
+html {
+  font-size: 62.8%;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 86%);
+}
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70rem;
+  height: 55rem;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  border-bottom-right-radius: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  gap: 4rem;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.input label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+}
+.input input {
+  max-width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: 0.4px solid hsl(0, 0%, 86%);
+  border-radius: 0.4rem;
+  font-weight: 700;
+  /* border-color: hsl(0, 1%, 44%); */
+}
+.input p {
+  padding-top: 1rem;
+}
+.input input:focus {
+  outline: 0;
+  border-color: hsl(259, 100%, 65%);
+}
+.input.error input {
+  border-color: hsl(0, 100%, 67%);
+}
+.input.error label {
+  color: hsl(0, 100%, 67%);
+}
+.input p {
+  font-size: 1.1rem;
+  color: hsl(0, 100%, 67%);
+}
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  margin-right: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.btn img {
+  max-width: 5rem;
+  max-height: 5rem;
+  padding: 1rem;
+}
+.display {
+  padding-left: 4rem;
+}
+.display p {
+  font-size: 7rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.display p span {
+  color: hsl(259, 100%, 65%);
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 500px) {
+  .main-container {
+    max-width: 45rem;
+    /* padding: 0 4rem; */
+  }
+  .inputs {
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+  .btn {
+    align-self: center;
+    margin-right: 0;
+    width: 6rem;
+    height: 6rem;
+  }
+  .display p {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-container {
+    max-width: 40rem;
+    height: 50rem;
+  }
+
+  .inputs {
+    gap: 1rem;
+    padding-right: 3rem;
+  }
+  .input input {
+    max-width: 9rem;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+  .main-container {
+    max-width: 35rem;
+  }
+  .display p {
+    font-size: 5rem;
+  }
+}
